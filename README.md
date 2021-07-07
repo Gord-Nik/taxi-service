@@ -1,4 +1,5 @@
 ![img.png](img.png)
+
 The goal of this project is to create a taxi service with authentication system, custom injector and annotations and all the features that might come in handy while managing the app:
 create new car / manufacturer
 display all drivers
