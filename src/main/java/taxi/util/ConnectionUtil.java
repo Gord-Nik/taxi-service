@@ -1,4 +1,4 @@
-package util;
+package taxi.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

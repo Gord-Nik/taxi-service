@@ -1,4 +1,4 @@
-package lib.exception;
+package taxi.lib.exception;
 
 public class DataProcessingException extends RuntimeException {
     public DataProcessingException(String message, Throwable cause) {

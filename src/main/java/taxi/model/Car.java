@@ -1,4 +1,4 @@
-package model;
+package taxi.model;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
