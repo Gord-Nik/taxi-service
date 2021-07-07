@@ -5,7 +5,7 @@ display all drivers
 add driver to the car
 remove driver from car, etc.
 
-#Technologies used:
+# Technologies used:
 * Backend: Java, JDBC, Servlets
 * Logger: Log4j
 * Frontend: HTML, CSS, JSP, JSTL
@@ -13,7 +13,7 @@ remove driver from car, etc.
 * Web-server: Tomcat
 * Packaging: Apache Maven
 
-#Setup
+# Setup
 * Configure Apache Tomcat
 * Install MySQL and MySQL Workbench
 * Create a schema and all the necessary tables by using the script from resources/init_db.sql in MySQL Workbench
