@@ -1,12 +1,5 @@
 package taxi.dao;
 
-import taxi.lib.Dao;
-import taxi.lib.exception.DataProcessingException;
-import taxi.model.Car;
-import taxi.model.Driver;
-import taxi.model.Manufacturer;
-import taxi.util.ConnectionUtil;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,6 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import taxi.lib.Dao;
+import taxi.lib.exception.DataProcessingException;
+import taxi.model.Car;
+import taxi.model.Driver;
+import taxi.model.Manufacturer;
+import taxi.util.ConnectionUtil;
 
 @Dao
 public class CarDaoImpl implements CarDao {
@@ -27,7 +26,7 @@ public class CarDaoImpl implements CarDao {
         String insertQuery = "INSERT INTO cars (model, manufacturer_id)"
                 + "VALUES (?, ?)";
         try (Connection connection = ConnectionUtil.getConnection();
-             PreparedStatement preparedStatement =
+                PreparedStatement preparedStatement =
                         connection.prepareStatement(
                              insertQuery, Statement.RETURN_GENERATED_KEYS)) {
             preparedStatement.setString(1, car.getModel());
