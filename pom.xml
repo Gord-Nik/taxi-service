@@ -42,7 +42,6 @@
             <version>1.18.20</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -50,6 +49,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
                 <configuration>
                     <webXml>src/main/webapp/web.xml</webXml>
                 </configuration>
@@ -91,5 +91,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
 </project>
